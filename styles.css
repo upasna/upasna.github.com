@@ -172,6 +172,13 @@ div.figure2{
 	width:103px;
 }
 
+div.figure3{
+	border:3px solid #142830;
+	float:left;
+	height:900px;
+	width:600px;
+}
+
 div.figure:hover{
 	-moz-box-shadow:0 0 2px #4D7788;
 	-webkit-box-shadow:0 0 2px #4D7788;
