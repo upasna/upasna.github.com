@@ -1,9 +1,13 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
         <title>Upasna Rai</title>
         
-        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />   
+        <link rel="stylesheet" type="text/css" href="styles.css" />
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-32205536-1']);
@@ -17,24 +21,113 @@
              })();
             
             </script>
+        <!--[if IE]>
+        
+        <style type="text/css">
+        .clear {
+          zoom: 1;
+          display: block;
+        }
+        </style>
+
+        
+        <![endif]-->
         
     </head>
+    
     <body>
-        <div id="about">
-            <div id="story">
+
+    	<div class="section" id="page"> <!-- Defining the #page section with the section tag -->
+    
+            <div class="header"> <!-- Defining the header section of the page with the appropriate tag -->
+
                 <h1>Upasna Rai</h1>
-                <br/>
-                <p><strong> Happy Birthday! </strong> 
-                <br/>Open with a smile...this website is officially yours.</br></br> I have set up all the tecnical details, like your personal domain name, server space and a few other things, now all we need to add is the content and maybe some nice themes.</br> We can add your resume, papers, hobbies, and all important things that will help with your university applictions. </p>
-                <br/><br/>
-            </div>
-            <img id="picture" src="images/pic.jpg" alt="" />
+                <h3>Undergraduate</h3>
+                <h4>Chemical Engineering, RVCE, Bangalore</h4>
+                
+                <div class="nav clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+                        <li><a href="#article1">About me</a></li>
+                        <li><a href="#article2">Resume</a></li>
+                    </ul>
+                </div>
             
+            </div>
+            
+            <div class="section" id="articles"> <!-- A new section with the articles -->
+
+				<!-- Article 1 start -->
+
+                <div class="line"></div>  <!-- Dividing line -->
+                
+                <div class="article" id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>About me</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    
+                    	<div class="figure"> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<img src="images/pic.jpg" width="350" height="370" alt=""/>
+                        </div>
+                        
+                        <p>Here is where you need to fill stuff about yourself. I can add more tabs if you like.<br/> You can take a look at this website for some inspiration <a href="http://www.ee.iitm.ac.in/~ee08b035">click here</a> :)</p>
+                    </div>
+                </div>
+                
+				<!-- Article 1 end -->
+
+
+				<!-- Article 2 start -->
+
+                <div class="line"></div>
+                
+                <div class="article" id="article2">
+                    <h2>Resume</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                        <div class="figure2"> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<a href="Upas-resume.pdf" target="_blank"><img src="images/download.jpg" width="105" height="30" alt=""/></a>
+                        </div>
+	                    	
+                        <div>
+                            <object data="Upas-resume.pdf" type="application/pdf" width="610" height="800">
+                                alt : <a href="Upas-resume.pdf">Resume.pdf</a>
+                            </object>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+				<!-- Article 2 end -->
+
+				<!-- Article 3 start -->
+
+               
+                
+				<!-- Article 3 end -->
+
+
+            </div>
+
+        <div class="footer"> <!-- Marking the footer section -->
+
+          <div class="line"></div>
+           
+           <p>&copy; upasnarai.in | Upasna Rai 2012</p> <!-- Change the copyright notice -->
+           
+           <a href="#" class="up">Go UP</a>
+
         </div>
-        <div id="more">      
-        </div>
-        <div id="footer">
-            <p>&copy; Upasna Rai | upasnarai.in </small></p>
-        </div>    
+            
+		</div> <!-- Closing the #page section -->
+        
+        <!-- JavaScript Includes -->
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
