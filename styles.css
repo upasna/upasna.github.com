@@ -10,6 +10,7 @@ body{
 	color:#fcfcfc;
 	background-color:#355664;
 	font: 14px/20px Georgia, "Times New Roman", Times, serif;
+    width:100%
 }
 
 /* Hyperlink Styles: */
@@ -86,9 +87,9 @@ div.footer .line{
 div.nav{
 	background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
 	padding:0 5px;
-	position:absolute;
-	right:0;
-	top:4em;
+	position:fixed;
+	right:11em;
+	top:0.5em;
 	
 	border:1px solid #FCFCFC;
 
@@ -188,6 +189,34 @@ div.figure:hover{
 div.figure img{
 	margin-left:-60px;
 }
+/*Bullet Styling*/
+
+#wrapper {
+width:1024px;
+margin:0 auto;
+}
+/* the above are the ie fixes */
+
+/* set the width of the container div to fit the needs of your page */
+#bulletcontainer {
+width:800px;
+}
+
+#bulletwidth {
+width:250px;
+}
+
+.leftbullet {
+float:left;
+margin: 0 0 0 20px;
+}
+
+.rightbullet {
+float:right;
+}
+/*Download button Styling*/
+
+
 
 /* Footer styling: */
 
