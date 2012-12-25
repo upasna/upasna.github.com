@@ -32,6 +32,37 @@
 
         
         <![endif]-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="fadeslideshow.js">
+            
+            /***********************************************
+             * Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+             * This notice MUST stay intact for legal use
+             * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+             ***********************************************/
+            
+            </script>
+        
+        <script type="text/javascript">
+            
+            var mygallery=new fadeSlideShow({
+                                            wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+                                            dimensions: [918, 500], //width/height of gallery in pixels. Should reflect dimensions of largest image
+                                            imagearray: [
+                                                         ["images/Certificate_Sophia.png", "", "", "As part of the student council at High School"],
+                                                         ["images/Imaginary4.png","","","Part of the play Imaginary Invalid at Bangalore"],
+                                                         ["images/Basketball.png", "", "", "Basketball Winners 2012 at MIT, Manipal tournament; Basketball Champions 2011 at MSRIT tournament; Basketball Winners at PESIT Sports fest 2009"]//<--no trailing comma after very last image element!
+                                                         ],
+                                            displaymode: {type:'auto', pause:5000, cycles:0, wraparound:false},
+                                            persist: false, //remember last viewed slide and recall within same session?
+                                            fadeduration: 1000, //transition duration (milliseconds)
+                                            descreveal: "peekaboo",
+                                            togglerid: "slideshowtoggler"
+                                            })
+            
+            
+                       </script>
         
     </head>
     
@@ -50,7 +81,8 @@
                         <li><a href="#article1">About me</a></li>
                         <li><a href="#article2">Research</a></li>
                         <li><a href="#article3">Academics</a></li>
-                        <li><a href="#article4">Resumé</a></li>
+                        <li><a href="#article4">Achievements</a></li>
+                        <li><a href="#article5">Resumé</a></li>
                         
                     </ul>
                 </div>
@@ -71,7 +103,7 @@
                     <div class="articleBody clear">
                     
                     	<div class="figure"> <!-- The figure tag marks data (usually an image) that is part of the article -->
-	                    	<img src="images/pic.jpg" width="350" height="370" alt=""/>
+	                    	<img src="images/pic1.png" width="350" height="370" alt=""/>
                         </div>
                         
                         <p>I'm a final year Undergraduate student of Chemical Engineering at RVCE, Bangalore. I have a strong inclination towards research in Renewable Energy and Environmental Engineering.<br/><br/> Academics aside, I love sports, especially basketball. I have been on the atheletics team in high school and basketball team in high school as well as at RVCE. <br/> I love acting too and have been a part of many plays and theatrical dramas. </p>
@@ -123,7 +155,7 @@
                         
                         <p> CGPA(after 6 semesters): &nbsp;9.32<br/>2nd in my Chemical Engineering Class at RVCE. <br/><br/>
                         
-                        Chemical Engineering Courses:<br/></p>
+                        Chemical Engineering courses:<br/></p>
                         <div id ="wrapper">
                             
                             <!-- Create a single div to hold everything -->
@@ -131,21 +163,27 @@
                                     
                                     <div id="bulletwidth" class="leftbullet">
                                         <ul>
-                                            <li>Nano Technology</li>
-                                            <li>Pollution Control</li>
-                                            <li>Energy Engineering</li>
-                                            <li>Waste Management</li>
-                                            <li>Heat And Mass Transfer</li>
+                                            <li>Thermodynamics</li>
+                                            <li>Computer Application in Chemical Engineering</li>
+                                            <li>Mass transfer</li>
+                                            <li>Biochemical Engineering</li>
+                                            <li>Reaction Engineering</li>
+                                            <li>Process Dynamics and Control</li>
+                                            <li>Chemical Technology</li>
+                                            
                                         </ul>
                                     </div>
                                     
                                     
                                     <div id="bulletwidth" class="rightbullet">
                                         <ul>
-                                            <li>Thermodynamics</li>
-                                            <li>Reaction Engineering</li>
-                                            <li>Process Design and Control</li>
+                                            <li>Process Heat Transfer</li>
+                                            <li>Materials Engineering</li>
+                                            <li>Technical Chemistry</li>
                                             <li>Mechanical Operations</li>
+                                            <li>Momentum Transfer</li>
+                                            <li>Engineering Mathematics</li>
+                                            <li>Chemical Engineering Lab</li>
                                             
                                         </ul>
                                     </div>
@@ -154,6 +192,31 @@
                                 
                                 <!-- close wrapper divi-->
                         </div>
+                        </br></br></br></br></br></br></br></br></br></br>
+                        <p>Elective courses:</p>
+                        <div id ="wrapper">
+                            
+                            <!-- Create a single div to hold everything -->
+                            <div id="bulletcontainer">
+                                
+                                <div id="bulletwidth" class="leftbullet">
+                                    <ul>
+                                        <li>Nano Technology</li>
+                                        <li>Pollution Control Engineering</li>
+                                        <li>Energy Engineering</li>
+                                        <li>Waste Management</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- close wrapper divi-->
+                        </div>
+                        <br/><br/><br/><br/><br/><br/>
+                        <p>12th Grade(2009): 92% Deeksha Centre for Learning PUC College, Bangalore
+                        <br/><br/>
+                        10th Grade(2007): 90% Sophia High School, Bangalore
+                        </p>
                         
                     </div>
                 </div>
@@ -164,6 +227,22 @@
                 <div class="line"></div>
                 
                 <div class="article" id="article4">
+                    <h2>Achievements</h2>
+                    <br/><br/>
+                    <div id="fadeshow1"></div>
+                    <div id="slideshowtoggler">
+                        <a href="#" class="prev"><img src="images/left.png" style="border-width:0" /></a> <span class="status" style="margin:0 50px; font-weight:bold"></span> <a href="#" class="next"><img src="images/right.png" style="border-width:0" /></a>
+                    </div>
+                        
+                    </div>
+                </div>
+                
+				<!-- Article 4 end -->
+                <!-- Article 5 start -->
+                
+                <div class="line"></div>
+                
+                <div class="article" id="article5">
                     <h2>Resumé</h2>
                     
                     <div class="line"></div>
@@ -183,7 +262,7 @@
                     </div>
                 </div>
                 
-				<!-- Article 4 end -->
+				<!-- Article 5 end -->
 
 
 
@@ -208,3 +287,7 @@
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
+
+
+
+
